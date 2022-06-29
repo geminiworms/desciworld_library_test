@@ -9,9 +9,16 @@ permalink: /
 
 <div class="notes">
   {% for post in site.notes %}
-  <div class="notes">
-    <h1 class="notes-title">
-      <a href="{{ site.baseurl }}{{ notes.url }}">
-        {{ notes.title }}
+   <div class="post">
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
       </a>
     </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+    {% if post.tags %} | 
+    {% for tag in post.tags %}
+    <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+    {% endfor %}
+    {% endif %}
