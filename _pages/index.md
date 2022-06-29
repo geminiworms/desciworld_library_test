@@ -22,3 +22,6 @@ permalink: /
     <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
     {% endfor %}
     {% endif %}
+  </div>
+  {% endfor %}
+</div>
