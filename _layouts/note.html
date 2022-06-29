@@ -9,11 +9,6 @@ layout: default
       Last updated on {{ page.last_modified_at | date: "%B %-d, %Y" }}
       {% endif %}
     </time>
-    {% if page.tags %} | 
-    {% for tag in page.tags %}
-      <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
-    {% endfor %}
-    {% endif %}
   </div>
 
   <div id="notes-entry-container">
