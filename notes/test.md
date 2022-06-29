@@ -1,6 +1,6 @@
 ---
+layout: note
 title: test
-tags: [testing]
-category: [A]
+tags: test
 --
 testing
