@@ -1,4 +1,6 @@
 ---
 title: test
-category: A
+tags: [testing]
+category: [A]
 --
+testing
