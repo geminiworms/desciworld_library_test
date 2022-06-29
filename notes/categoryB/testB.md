@@ -1,0 +1,4 @@
+---
+title: testB
+category: B
+---
