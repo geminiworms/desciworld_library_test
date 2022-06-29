@@ -11,3 +11,4 @@ permalink: /
   <h3>{{notes.title}}</h3>
 {% endfor %}
 
+</body>
